@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+type: software
+title: "fifth-power-concatenations: exhaustive GPU search for five-digit fifth-power concatenation identities"
+abstract: >-
+  CUDA implementation, mathematical coverage notes and recorded run evidence
+  for an exhaustive search of ordered five-tuples (a, b, c, d, e) of
+  five-digit integers (no leading zeros) satisfying
+  a^5 + b^5 + c^5 + d^5 + e^5 = concatenation(a, b, c, d, e).
+  The recorded run found exactly one solution,
+  (74416, 50589, 59222, 49043, 82475).
+authors:
+  - given-names: Sai
+    family-names: Bhushan
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/psimaths/fifth-power-concatenations"
+license: 0BSD
+version: "1.0.0"
+date-released: "2026-10-17"
+keywords:
+  - number theory
+  - Diophantine equations
+  - exhaustive search
+  - meet-in-the-middle
+  - CUDA
+  - fifth powers
+# After Zenodo archives the release, add its DOI:
+# doi: "10.5281/zenodo.XXXXXXX"
+preferred-citation:
+  type: unpublished
+  title: "A Computer-Assisted Uniqueness Result for a Fifth-Power Concatenation Equation"
+  authors:
+    - given-names: Sai
+      family-names: Bhushan
+  year: 2026
+  status: preprint
+  # After posting to arXiv, replace the two lines above the comment with:
+  # type: article
+  # identifiers:
+  #   - type: other
+  #     value: "arXiv:XXXX.XXXXX"
+  #     description: arXiv preprint
