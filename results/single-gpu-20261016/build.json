@@ -1,0 +1,45 @@
+{
+  "command": [
+    "/usr/local/cuda/bin/nvcc",
+    "-O3",
+    "-std=c++17",
+    "-Xcompiler=-fopenmp",
+    "-arch=sm_120",
+    "/workspace/fifth_power_search/src/search.cu",
+    "-o",
+    "/evidence/run/search"
+  ],
+  "exit_code": 0,
+  "source_sha256": {
+    "Makefile": "cecd656d9302a54a7fc73e70147572f7e35b17f96b17f059dd65bad2f4152b4a",
+    "src/core.hpp": "263eb02c4c7cc2c6ed0f4b022a650f7d79853b9224007c6edc3d93801c612318",
+    "src/search.cu": "29d8ee7e2a790832afd8b8c672493335c4a448acb24e01cdef78ecd74e337bec",
+    "tests/check_gpu.py": "c0f0c81d2f2a3cbf2c752fa54449f6f0ebc55c8198f7ae87a174a1fb60012f21",
+    "tests/reference.py": "ed7edc53b3b6562e6affb56cfaaaba694b1c5ae95c4cf4ae5714455e237bd6f4",
+    "tests/test_core.cpp": "8ab90288b3cf5c2a00cd077bc5cee1dcf954b8da41b1d8a165276bc6ce1e0c36",
+    "tests/test_receipt.py": "5374f50fcea793c406dc352eb07a61294733ca60b75922ae22aa39335e22e2fa",
+    "tests/test_recording.py": "f6e0a29c453484e3c4ea694ad36c56bc75ea426f38468daa38d4ebcbbfd728f6",
+    "tools/record_run.py": "907ce48bc8b83cc60a3a28972a414f8affdce7a7847c353a0be91d8efd04ff1e",
+    "tools/verify_run.py": "1acf053ccafa345c0a8cf904253d13b330522fb0729db6f5c23cec3b42064ed8"
+  },
+  "compiler": {
+    "command": [
+      "/usr/local/cuda/bin/nvcc",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0\n",
+    "stderr": ""
+  },
+  "host_compiler": {
+    "command": [
+      "g++",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "executable_sha256": "7ceb161a2cd3f032268a72d1110d9cadc6f09305f2bf1fab1633560d6952004c"
+}
