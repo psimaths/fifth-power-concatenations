@@ -1,4 +1,5 @@
 # Fifth powers equal to their concatenation
+[![DOI](https://zenodo.org/badge/1422810234.svg)](https://doi.org/10.5281/zenodo.23465771)
 
 This program searches for ordered tuples of five five-digit positive integers
 satisfying
